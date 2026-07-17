@@ -1,0 +1,70 @@
+# Chapter 05 — Social Simulation Engine
+
+## Section 5.6 — Social Groups
+
+**Depends On**
+
+- Section 5.5 — Trust Influence
+- Section 5.3 — Knowledge Propagation
+- Chapter 04 — Relationship System
+
+**Modified State**
+
+- World.SocialGraph
+- Character.GroupMembership
+- Character.SocialRole
+- Character.GroupPressure
+- Character.Reputation
+
+---
+
+# Purpose
+
+Social Groups define how individual relationships develop into larger social structures.
+
+In Paradiso:
+
+> Characters do not only have relationships with individuals.
+
+They also exist within communities.
+
+A group may influence:
+
+- What information spreads.
+- Who is trusted.
+- Who is isolated.
+- How conflicts develop.
+- How decisions are made.
+
+---
+
+# GROUP-001 Group Definition
+
+A Social Group is:
+
+> A collection of characters connected by repeated interaction, shared goals, or mutual trust.
+
+Groups are emergent.
+
+AI must not randomly assign permanent groups.
+
+---
+
+# GROUP-002 Group Formation Conditions
+
+A group may naturally form when:
+
+```text
+Repeated Interaction
+
++
+
+Shared Experience
+
++
+
+Common Goal
+
++
+
+Sufficient Trust
